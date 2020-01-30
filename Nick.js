@@ -45,7 +45,7 @@ if(age >= 21){
     }
 } else {
     console.log("too young, so sad");
-}s
+}
 
 if( age > 21 && haveId && haveDriver){
     console.log("go");
@@ -78,3 +78,71 @@ var fastFood = "Miss me with that";
 var noMoney = "That Sucks";
 var Type = "Burger";
 var Restaurant = "BestNTown" ;
+ 
+// Have some shots
+var goOutside;
+var weather = "alright";
+
+if(weather === "bad"){
+    goOutside = false;
+} else if (weather === "okay") {
+    goOutside = true;
+} else {
+    goOutside = false;
+    if(weather === "good"){
+        goOutside = true;
+    }
+}
+
+if (goOutside) {
+    console.log("we are going outside");
+} else {
+    console.log("stay inside");
+}
+
+ 
+
+//conditional//
+
+
+a = 2
+x = 15
+y =20
+console.log(a)
+ a += 5;
+ console.log(a)
+ a *= 2;
+ console.log(a)
+ a %= 3;
+ console.log(a)
+/* maybe 4 */ 
+ a %= 2;
+ console.log(a)
+/* yes and no. Computer math throws me off */
+if (a %2 == 0) {
+ 
+console.log("0")
+}
+else{
+console.log("Ya dun goofed")
+} 
+ if (x > 10 && a == 2){
+    console.log("Hey");
+ }
+ else{console.log("Nope.")
+ }
+ if (a < x){
+     console.log("It's too low.")
+ }
+  if(a != 2){
+      console.log("Seems legit.")
+  }
+  if(a > y){
+      console.log("This is fine.");
+      
+  }
+  else{console.log("That don't add up.")}
+//loop
+
+
+//function
