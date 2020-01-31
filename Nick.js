@@ -100,11 +100,7 @@ if (goOutside) {
     console.log("stay inside");
 }
 
- 
-
 //conditional//
-
-
 a = 2
 x = 15
 y =20
@@ -120,7 +116,6 @@ console.log(a)
  console.log(a)
 /* yes and no. Computer math throws me off */
 if (a %2 == 0) {
- 
 console.log("0")
 }
 else{
@@ -139,10 +134,42 @@ console.log("Ya dun goofed")
   }
   if(a > y){
       console.log("This is fine.");
-      
   }
   else{console.log("That don't add up.")}
-//loop
 
+//loop 
+var a=1
+var i=1;
 
+for(a = 0; a<10; a++){
+    console.log(a);
+    a++;
+}
+
+while(i<=50){
+    console.log(i);
+    i+=2
+}
 //function
+
+function Test(){
+    var Hello ="Hello my name is William.";
+    console.log(Hello);
+}
+Test();
+
+function add(one, two){
+    return one + two;
+}
+function mult(three,four){
+    return c * d;
+}
+
+
+
+function myFun(start,finsh){
+    for (var n = start; n <= end; i++){
+        console.log(i);
+    }
+}
+myFun(3,15);git
