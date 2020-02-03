@@ -138,8 +138,9 @@ console.log("Ya dun goofed")
   else{console.log("That don't add up.")}
 
 //loop 
-var a=1
+var a=1;
 var i=1;
+var e=1;
 
 for(a = 0; a<10; a++){
     console.log(a);
@@ -150,12 +151,24 @@ while(i<=50){
     console.log(i);
     i+=2
 }
+
+while(e<=100){
+    if(e % 15 == 0)
+        console.log("FizzBuzz");
+    else if(e % 3 === 0)
+        console.log("Fizz")
+    else if (e % 5 == 0)
+        console.log("Buzz");
+        else
+        console.log(e)
+    e++;
+}
+ 
 //function
 
 function Test(){
     var Hello ="Hello my name is William.";
-    console.log(Hello);
-}
+    console.log(Hello);}
 Test();
 
 function add(one, two){
@@ -165,11 +178,19 @@ function mult(three,four){
     return c * d;
 }
 
-
-
 function myFun(start,finsh){
-    for (var n = start; n <= end; i++){
+    for (var n = start; n <= end; i ++) {
         console.log(i);
     }
 }
-myFun(3,15);git
+
+//math
+    var Random = Math.floor((Math.random() * 10) +1);
+    function RandomCheck(){
+        var x =document.getElementById('userInput').value;
+        if(x == Random){
+            console.log("You did it"+ x);
+        } else{
+            console.log("Try again bud" + Random)
+        }
+    }
