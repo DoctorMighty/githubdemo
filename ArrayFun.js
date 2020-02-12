@@ -8,15 +8,15 @@ var Cats = ["Milk", "Sope", "Maple", "Tom", "Jerry", "Roach", "Derrel", "Pinky",
 
  var inventory= [
      ["Milk", 10],
-     ["Bread", 20],
-     ["Tomatos", 30],
-     ["Cheese", 40],
-     ["Soda", 50],
-     ["Fish", 60],
-     ["Steak", 70],
-     ["Apple", 80],
-     ["Bannanas", 90],
-     ["Peppers", 100]
+     ["Bread", 15],
+     ["Tomatos", 20],
+     ["Cheese", 25],
+     ["Soda", 30],
+     ["Fish", 35],
+     ["Steak", 40],
+     ["Apple", 50],
+     ["Bannanas", 55],
+     ["Peppers", 60]
  ]
 
  function add(){
@@ -28,9 +28,9 @@ var Cats = ["Milk", "Sope", "Maple", "Tom", "Jerry", "Roach", "Derrel", "Pinky",
      });
     }
 
- function sub() {
+ function  sub() {
      var input = document.getElementById('userInput').value;
-     for(let i = 0; i <inventory.length; i++){
+     for(let i = 0; i < inventory.length; i++){
          if(input == inventory[i][0]){
              inventory[1][1] -= 1;
          }
