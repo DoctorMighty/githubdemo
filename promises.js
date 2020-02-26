@@ -3,14 +3,14 @@
 */
 //complicated math
 function someMath(){
-    for(i = 0; i<10000000; i++){
-        if(i = 10000000){
+    for(i = 0; i<1000000; i++){
+        if(i = 1000000){
             return i;
         }
     }
 }
 //where we put our promise
-function waitForMath(){
+const mathAnswer = () => {
     return new Promise((resolve, reject) => {
         try{
             resolve(someMath());
@@ -20,6 +20,16 @@ function waitForMath(){
     })
 }
 
-waitForMath().then(res => {
+mathAnswer().then(res => {
     console.log(res);
+}).catch(err => {
+    console.log(err.message);
 });
+
+const wait = setTimeout(() => {
+    mathAnswer().then(res => {
+        console.log(res);
+    }).catch(err => {
+        console.log(err.message);
+    });
+},2000);
